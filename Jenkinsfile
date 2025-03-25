@@ -4,7 +4,7 @@ pipeline {
         PROJECT_ID = 'laba3-kiykiz-21-1-chernykh'
         CLUSTER_NAME = 'autopilot-cluster-1'
         LOCATION = 'us-central-1a'
-        CREDENTIALS_ID = 'kubernetes'
+        CREDENTIALS_ID = 'jenkins-service'
     }
     stages {
         stage('Checkout') {
