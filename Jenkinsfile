@@ -30,7 +30,7 @@ pipeline {
             location: env.LOCATION,
             manifestPattern: 'deployment.yaml',
             credentialsId: env.CREDENTIALS_ID,
-            verifyDeployments: true])
+            verifyDeployments: true])"
             }
         }
     }
