@@ -24,12 +24,12 @@ pipeline {
             echo "Deployment started ..."
             sh 'ls -ltr'
             sh 'pwd'
-            sh "sed -i 's/pipeline:latest/pipeline:class: 'KubernetesEngineBuilder',
-            projectId: env.PROJECT_ID,
-            clusterName: env.CLUSTER_NAME,
-            location: env.LOCATION,
-            manifestPattern: 'deployment.yaml',
-            credentialsId: env.CREDENTIALS_ID,
+            sh "sed -i 's/pipeline:latest/pipeline:class: 'KubernetesEngineBuilder',\n
+            projectId: env.PROJECT_ID,\n
+            clusterName: env.CLUSTER_NAME,\n
+            location: env.LOCATION,\n
+            manifestPattern: 'deployment.yaml',\n
+            credentialsId: env.CREDENTIALS_ID,\n
             verifyDeployments: true])"
             }
         }
